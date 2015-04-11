@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #131111;
+}
+
+header#cabezera, nav, section, aside, footer{
+	background: #756F6F;
+	color: #f2f2f2;
+	width: 90%;
+	margin: 1em auto;
+	border-radius: 10px;
+	padding: 1em 1em;
+	text-align: center;
+}
+nav, section, aside{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+nav a{
+	text-decoration: none;
+	color: #fff;
+	padding: 0 0.5em;
+	text-align: left;
+}
+section header#header2, article{
+	width: 90%;
+	background: red;
+	margin: 0 auto;
+}
+
+
