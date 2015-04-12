@@ -6,7 +6,7 @@ body{
 	background: #131111;
 }
 
-header#cabezera, nav, section, aside, footer{
+header#titulo, section#contenedor, footer#piepag{
 	background: #756F6F;
 	color: #f2f2f2;
 	width: 90%;
@@ -15,21 +15,47 @@ header#cabezera, nav, section, aside, footer{
 	padding: 1em 1em;
 	text-align: center;
 }
-nav, section, aside{
-	width: 25%;
-	display: inline-block;
-	vertical-align: top;
+
+section#contenedor{
+	background:none;
 }
-nav a{
+section#contenedor nav, section#contenido, aside {
+	background:#756F6F;
+	display: inline-block;
+	width:32%;
+	vertical-align: top;
+	border-radius: 10px; 
+	padding: 1em 1em; 
+}
+
+
+section#contenedor nav{
+	float: left;
+	width:20%;
+}
+section#contenedor nav, a{
 	text-decoration: none;
 	color: #fff;
-	padding: 0 0.5em;
 	text-align: left;
 }
-section header#header2, article{
-	width: 90%;
-	background: red;
-	margin: 0 auto;
+
+section#contenedor aside{
+	float:right;
 }
 
+section#contenido header#header2, article, footer#footersection{
+	background:#ccc;
+	margin:0.5em auto;
+	border-radius: 5px;
+	width:80%; 
+	color:#000;
+}
 
+@media screen and (max-width: 685px) {
+	
+	section#contenedor nav, section#contenido, aside {
+		display: block;
+		float:none;
+		text-align: left;
+}
+}
