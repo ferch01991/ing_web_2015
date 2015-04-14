@@ -49,13 +49,31 @@ section#contenido header#header2, article, footer#footersection{
 	border-radius: 5px;
 	width:80%; 
 	color:#000;
+	padding: 1em 1em;
 }
 
+
+
 @media screen and (max-width: 685px) {
-	
+
+	header#titulo, footer#piepag{
+		width: 70%;
+	}	
+
 	section#contenedor nav, section#contenido, aside {
 		display: block;
-		float:none;
 		text-align: left;
-}
+		margin-bottom: 1em;
+		width: 70%;
+		float: none;
+
+	}
+	section#contenedor aside{
+		margin-bottom: 1em;
+
+	}
+	footer#piepag{
+		margin-top: 3em;
+	}
+
 }
